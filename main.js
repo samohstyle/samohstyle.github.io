@@ -1,9 +1,24 @@
 // TODO: Add your import statements here.
 // ALL functions should be in brackets.
 // Default export is the only one outside the bracket.
-import salaryData, {getRoles, getCompanies} from "https://raw.githubusercontent.com/samohstyle/samohstyle.github.io/main/modules/salaryData.js";
-import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from "https://raw.githubusercontent.com/samohstyle/samohstyle.github.io/main/modules/workAroundModule.js";
-import {formatNumber} from "https://raw.githubusercontent.com/samohstyle/samohstyle.github.io/main/modules/utilities.js";
+
+async function importFromGithub(url) {
+  const response = await fetch(url);
+  const scriptText = await response.text();
+  eval(scriptText);
+}
+
+importFromGithub('https://raw.githubusercontent.com/samohstyle/samohstyle.github.io/main/modules/salaryData.js').then(() => {
+  salaryData, {getRoles, getCompanies}
+}).catch(error => console.error("Error importing:", error));
+
+importFromGithub('https://raw.githubusercontent.com/samohstyle/samohstyle.github.io/main/modules/workAroundModule.js').then(() => {
+  {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary}
+}).catch(error => console.error("Error importing:", error));
+
+importFromGithub('https://raw.githubusercontent.com/samohstyle/samohstyle.github.io/main/modules/utilities.js').then(() => {
+  {formatNumber}
+}).catch(error => console.error("Error importing:", error));
 
 // TODO: Get the companies and roles using the salaryData module.
 const companies = getCompanies();
