@@ -1,9 +1,9 @@
 // TODO: Add your import statements here.
 // ALL functions should be in brackets.
 // Default export is the only one outside the bracket.
-import salaryData, {getRoles, getCompanies} from "https://github.com/samohstyle/samohstyle.github.io/modules/salaryData.js";
-import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from "https://github.com/samohstyle/samohstyle.github.io/modules/workAroundModule.js";
-import {formatNumber} from "https://github.com/samohstyle/samohstyle.github.io/modules/utilities.js";
+import salaryData, {getRoles, getCompanies} from "https://cdn.jsdelivr.net/gh/samohstyle/samohstyle.github.io/modules/salaryData.js";
+import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from "https://cdn.jsdelivr.net/gh/samohstyle/samohstyle.github.io/modules/workAroundModule.js";
+import {formatNumber} from "https://cdn.jsdelivr.net/gh/samohstyle/samohstyle.github.io/modules/utilities.js";
 
 // TODO: Get the companies and roles using the salaryData module.
 const companies = getCompanies();
