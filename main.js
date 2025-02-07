@@ -2,9 +2,9 @@
 // ALL functions should be in brackets.
 // Default export is the only one outside the bracket.
 
-import salaryData, {getRoles, getCompanies} from "./.vscode/modules/salaryData.js";
-import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from "./.vscode/modules/workAroundModule.js";
-import {formatNumber} from "./.vscode/modules/utilities.js";
+import salaryData, {getRoles, getCompanies} from "./.modules/salaryData.js";
+import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from "./.modules/workAroundModule.js";
+import {formatNumber} from "./.modules/utilities.js";
 
 // TODO: Get the companies and roles using the salaryData module.
 const companies = getCompanies();
